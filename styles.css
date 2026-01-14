@@ -1,43 +1,85 @@
+/* Brand Colors */
+:root {
+  --blue: #002f6c;
+  --white: #ffffff;
+  --light-blue: #f0f8ff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--white);
+  color: var(--blue);
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 15px;
+  font-weight: 500;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
+h2 {
+  color: var(--blue);
+  font-size: 2em;
+  margin-bottom: 25px;
 }
 
-button:hover {
-    background-color: #0056b3;
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+ul li {
+  background-color: var(--light-blue);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  padding: 25px;
+  font-weight: bold;
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+ul li:hover {
+  transform: scale(1.05);
+  background-color: #e6f0ff;
+}
+
+section p {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
 }
